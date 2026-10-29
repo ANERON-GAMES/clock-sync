@@ -1,0 +1,43 @@
+{
+  "name": "@aneron/clock-sync",
+  "version": "1.0.0",
+  "description": "Estimate a client clock offset and round-trip time from timestamped ping samples.",
+  "license": "MIT",
+  "author": "Vadim Gubin",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANERON-GAMES/clock-sync.git"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "clock",
+    "ntp",
+    "offset",
+    "rtt",
+    "sync"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
